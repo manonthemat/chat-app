@@ -12,10 +12,11 @@
 	</form>
 
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-	<script src="/socket.io.js"></script>
+  <script src="https://cdn.socket.io/socket.io-1.1.0.js"></script>
 	<script>
+    // TODO: there's a unexpected illegal token in this jquery somewhere
 		jQuery(function($){
-			//get our socket functionality 
+			//get our socket functionality
 			var socket = io.connect();
 			// grab our message form
 			var $messageForm = $(#send-message);
